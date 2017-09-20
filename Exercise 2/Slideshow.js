@@ -19,7 +19,11 @@ setTimeout("swapImage()",3000);
 //window.onload=swapImage; 
 
 function getLeft(){
-    currSlide = currSlide--;
+    currSlide = currSlide - 1;
+    if(currSlide < 0){
+        currSlide = 4;
+    }
+    changeSlide(currSlide);
 }
 
 
@@ -28,19 +32,14 @@ function getLeft(){
 
 function getRight(){
     currSlide = currSlide + 1;
-    //console.log(currSlide);
-    //console.log(slideShow.length)
-    if(currSlide > 5){
+    if(currSlide > 4){
         currSlide = 0;
     }
     changeSlide(currSlide);
 }
 
-function changeSlide(n){
-    //console.log(n)
-    
-        n = n + 1;
+function changeSlide(n){  
+    n = n + 1;
 
-    //console.log(n);
     document.slide.src = slideShow[currSlide];
 }  
