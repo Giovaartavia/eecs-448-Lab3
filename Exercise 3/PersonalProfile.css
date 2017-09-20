@@ -1,0 +1,55 @@
+body
+{
+    background-color:#E0F1F1;
+    font-family: cursive;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 25pt;
+}
+
+img
+{
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+p.Biography
+{
+    padding : 0;
+    margin : 0;
+
+}
+
+p.Footnote
+{
+    font-size: 8pt;
+}
+
+p.gif
+{
+    text-align: center;
+    font-size: 25pt;
+    color: white;
+    background-image: url(200.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a
+{
+    color:brown;
+}
+
+a:hover
+{
+    color: pink;
+}
+
+a:visited
+{
+    color:green;
+}
